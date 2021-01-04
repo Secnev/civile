@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
+html {
+  background-color: #222831;
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#main-sections {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    background-color: #222831;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+  #main-title {
+    position: absolute;
+    top: 30vh;
+    overflow: hidden;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+    
   }
-  to {
-    transform: rotate(360deg);
+
+  #btn {
+    padding:10px 20px 10px 20px;
+    background: none;
+    border: solid purple;
+    color: red;
+    border-width: 3px;
+    margin: 0px 30px 0px 30px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
   }
-}
+  #btn:hover {
+    transform: scale(1.1);
+    background-color: #222832;
+    box-shadow: 5px 10px 25px black;
+  }
+  #btn-group{
+    position: absolute;
+    right: -50px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: center;
+    margin:50px;
+    border: orange solid;
+    height: 100vh;
+    width: 25vw;
+    z-index: 500;
+    background-color: black;
+  }
+
+  .mainImage {
+      width: 50vw;
+      
+  }
+
+  .about-paragraph {
+    width: 50vw;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  #about-section {
+    height: 80vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+  #resources-title{
+    color: white;
+    height: 100vh;
+    background-color: #222831;
+    display: flex;
+    justify-content: center;
+    border: red solid;
+  }
+
+  .toggle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+
+  }
+
+  .toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: violet;
+    border-radius: 10px;
+    z-index: 100;
+  }
+
+  .back-btn  h4 {
+    width: 100px;
+    border: red solid;
+    background-color: thistle;
+  }
+
+  .menu-container {
+    border: green solid;
+    width: 20vw;
+    display: flex;
+
+    
+  }
