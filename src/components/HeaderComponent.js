@@ -33,7 +33,7 @@ const Header = (props) => {
         </Dropdown>
 
         <NavItem>
-          <NavLink ><Link to='/resources'> Resources</Link></NavLink>
+          <NavLink ><Link to='/path'> Path</Link></NavLink>
         </NavItem>
        
 

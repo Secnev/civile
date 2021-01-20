@@ -3,7 +3,7 @@ import Header from './HeaderComponent';
 import Footer from "./FooterComponent";
 import Home from './HomeComponent';
 import About from './AboutMe';
-import ResourcesMain from './ResourcesComponent';
+import PathMain from './PathMain';
 import Tools from './ToolsComponent';
 import { Switch, Route, Redirect } from 'react-router-dom';
 
@@ -24,7 +24,7 @@ class Main extends Component {
                 <Switch>
                     <Route path='/home' component={HomePage} />
                     <Route path='/about'><About/></Route>
-                    <Route path='/resources'><ResourcesMain/></Route>
+                    <Route path='/path'><PathMain/></Route>
                     <Route path='/tools'><Tools /></Route>
                     <Redirect to='/home' />
                 </Switch>

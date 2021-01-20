@@ -11,25 +11,53 @@ html {
     margin-top: 0;
     background-color: #222831;
   }
-#main-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
-  #main-txt {
-    color: white;
-    font-size: 3rem;
-    z-index: 100;
-    position: absolute;
-    top: 49%;
+  #main-title {
+    display: flex;
+    height: 100vh;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
   }
 
+  .main-background {
+    width: 100%;
+  }
 
-.main-background {
-  height: 100%;
-  object-fit: cover;
-}
+  #main-txt {
+    color: rgb(227, 170, 37);
+    font-size: 3rem;
+    font-family: 'Staatliches', cursive;
+    z-index: 100;
+    position: absolute;
+    top: 35%;
+  }
+  #sub-txt {
+    margin: 25px;
+    color: black;
+    font-size: 1.7rem;
+    font-family: 'Oxygen', 'Helvetica Neue';
+    z-index: 101;
+    position: absolute;
+    top: 40%;
+  }
+  #main-btn {
+    margin: 25px;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Oxygen','Helvetica Neue';
+    box-shadow: rgb(107, 107, 107) 1px 1px 3px 1px;
+    z-index: 102;
+    position: absolute;
+    top: 50%;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(46, 91, 0);
+  }
+
 
   #btn {
     padding:10px 20px 10px 20px;
@@ -66,30 +94,82 @@ html {
 
   .mainImage {
       width: 50vw;
-      
   }
 
-  .about-paragraph {
-    width: 50vw;
-    text-align: center;
-    margin-top: 50px;
-  }
+  .resource-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+      padding-bottom: 100px;
+      }
 
-  #about-section {
-    height: 80vh;
-    margin-top: 80px;
-    margin-bottom: 50px;
+  #overview-card {
+    height: 200px;
+    width: 80vw;
+    margin-top: 25px;
+    max-width: 600px;
+    border-radius: 15px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
-
+    text-align: left;
+    
   }
 
-  #about {
-    margin-top: 80px;
+
+  #path-card {
+    padding: 20px 0 20px 0;
+    margin-top: 25px;
+    width: 80vw;
+    max-width: 600px;
+    border: solid black;
+    border-radius: 15px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
   }
+#about-section {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#about-txt {
+
+  font-family: 'Staatliches', 'Helvetica Neue';
+  color: rgb(227, 170, 37);
+
+}
+
+  .about-pic {
+    margin: 40px;
+
+  }
+  #about-me-pic {
+    height:300px;
+    width: auto;
+  }
+
+  .about-sec {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    min-width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 300px;
+  }
+
+
 
   #resources-title{
     color: white;
@@ -98,32 +178,6 @@ html {
     display: flex;
     justify-content: center;
   }
-
-  .toggle-button {
-    position: absolute;
-    top: 0.75rem;
-    right: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-
-  }
-
-  .toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: violet;
-    border-radius: 10px;
-    z-index: 100;
-  }
-
-  .back-btn  h4 {
-    width: 100px;
-    background-color: thistle;
-  }
-
 
   form {
     display: flex;
@@ -174,14 +228,12 @@ html {
   width: 60px;
   margin: 10px;
 }
-.resources-banner {
-  background-color: blue;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-}
+
 #resources-nav {
   background-color: #222832;
+}
+
+footer {
+  background-color: #e7e7e7;
+  color:rgb(227, 170, 37);
 }

@@ -3,19 +3,12 @@ import React from 'react';
 function AboutResources () {
 
     return(
-        <div id="about-section"> 
-                
-                
-                <section id="about" className="about-paragraph">
-                    <p>
-                        This section of the website contains links to resources I found useful during my college days. 
-                        I'll try to keep adding more as I come accross resources that I remember using. 
-                        I also have added reources that I currently use at my job that I wish I knew during undergrade.
-
-                    </p>
-             
-                </section>
-     
+        <div id="overview-card"> 
+       <h3>Overview</h3>
+        <p>This section of the website is meant to serve as a way to see your path to becoming a civil engineer.
+        You can use this during your semester or as a way to get ahead. The last portion of the path
+        will contain resources that will help you professionally.     
+        </p>          
         </div>
     );
 }
