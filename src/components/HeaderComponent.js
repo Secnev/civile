@@ -1,44 +1,60 @@
-import { Link } from 'react-router-dom';
+
 import React, { useState } from 'react';
-import { Nav, NavItem, Dropdown, DropdownItem, DropdownToggle, DropdownMenu, NavLink } from 'reactstrap';
+import {
+  Collapse,
+  Navbar,
+  NavbarToggler,
+  NavbarBrand,
+  Nav,
+  NavItem,
+  NavLink,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText
+} from 'reactstrap';
+import {Link} from 'react-router-dom';
 
 const Header = (props) => {
-    const [dropdownOpen1, setDropdownOpen1] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
-    const toggle1 = () => setDropdownOpen1(!dropdownOpen1);
-
-
-  
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
     <div>
-      <Nav id="tools-nav" tabs>
-      <NavItem>
-            <Link to='/home'> <NavLink >Home</NavLink></Link>
-        </NavItem>
-
-        <NavItem>
-            <Link to='/about'> <NavLink >About</NavLink></Link>
-        </NavItem>
-
-        <Dropdown nav isOpen={dropdownOpen1} toggle={toggle1}>
-          <DropdownToggle nav caret>
-            Tools
-          </DropdownToggle>
-          <DropdownMenu>
-          <Link to='/tools'><DropdownItem>Interpolation Calculator</DropdownItem></Link>
-            <DropdownItem divider />
-            <DropdownItem>Gaussian Elimination</DropdownItem>
-          </DropdownMenu>
-        </Dropdown>
-
-        <NavItem>
-          <NavLink ><Link to='/path'> Path</Link></NavLink>
-        </NavItem>
-       
-
-       
-    </Nav>
+      <Navbar id='navbar-style' color="dark" dark expand="md">
+        <NavbarBrand id='navbar-title' href="/">Civil-E</NavbarBrand>
+        <NavbarToggler onClick={toggle} />
+        <Collapse isOpen={isOpen} navbar>
+          <Nav className="mr-auto" navbar>
+            <NavItem>
+              <NavLink href="/path">Path</NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink href='/about'>About</NavLink>
+            </NavItem>
+            <UncontrolledDropdown nav inNavbar>
+              <DropdownToggle nav caret>
+                Tools
+              </DropdownToggle>
+              <DropdownMenu right>
+                
+                  <Link to='/tools'><DropdownItem>Interpolation</DropdownItem></Link>
+                
+                <DropdownItem divider/>
+                <DropdownItem>
+                  Beam Calculations
+                </DropdownItem>
+                <DropdownItem divider/>
+                <DropdownItem>
+                  Column Calculations
+                </DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+        </Collapse>
+      </Navbar>
     </div>
   );
 }

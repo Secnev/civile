@@ -10,14 +10,11 @@ function About () {
                 
                 <div id="about" className="about-paragraph">
                   
-                    <div className='about-sec'>
+                    <div className='about-ce'>
                         <h2 id='about-txt'> ABOUT CIVIL-E</h2>
                         <p>
-                            Welcome to my site! I made this website as a way to merge my two passions: engineering and web development. 
-                            As I was searching for a project that I could be motivated about I realized that I could make a website that
-                            I would have found useful while still in college. In todays world it can be overwhelming trying to find learning
-                            resources. I plan on sharing what resources I found useful in college and others that I discovered during my 
-                            professional day to day.
+                         Welcome to my site! I made this website as a way of keeping my engineer knowledge sharp and learning more about programming/web developing.
+                         My hope is that someone can find this site useful in some way and I can make the journey to becoming a civil engineer more enjoyable.
 
                         </p>
                         <p>
@@ -29,14 +26,15 @@ function About () {
                 <div id="about" className="about-paragraph">
       
 
-                    <div className='about-sec'>
+                    <div className='about-me'>
                         <h2 id='about-txt'> ABOUT ME</h2>
                         <p>
                             My name is David and i'm currently a structural engineer (EIT).
                             I graduated from the University of North Carolina at Charotte with a B.S. in Civil Engineering.
-                            I'll be attending NC State University Spring 2022 to persue a Masters Degree in Civil Engineering.
-                            Web development has always been an interest for me and this year (2020...) I decided to give it a real
-                            go. As I learn more development tools and languages I hope to expand what this site can do. 
+                            I'll be continuing my education at NC State University Spring 2022 to persue a Masters Degree in Civil Engineering.
+                            Web development has always been an interest for me and this year (2020...) I decided it was time to learn more
+                            about it and start project that I care about. As I learn more I hope I can improve this site and make it event
+                            more useful.
                         </p>
                     </div>
 

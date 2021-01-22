@@ -1,24 +1,33 @@
 html {
   background-color: #222831;
   scroll-behavior: smooth;
+  font-family: 'Oxygen', 'Helvetica Neue';
+}
+
+#navbar-title {
+  font-family: 'Staatliches', cursive;
+  font-size: 1.6rem;
+  color: rgb(227, 170, 37);
+}
+#navbar-style {
+  z-index: 200;
+  position: fixed;
+  width: 100%;
 }
 
 #main-sections {
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 0;
-    background-color: #222831;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
   }
 
   #main-title {
-    display: flex;
-    height: 100vh;
-    object-fit: cover;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   padding: 25px;
   }
 
   .main-background {
@@ -28,34 +37,35 @@ html {
   #main-txt {
     color: rgb(227, 170, 37);
     font-size: 3rem;
-    font-family: 'Staatliches', cursive;
+    font-family: 'Staatliches', 'Helvetica Neue';
     z-index: 100;
-    position: absolute;
-    top: 35%;
   }
   #sub-txt {
-    margin: 25px;
     color: black;
     font-size: 1.7rem;
     font-family: 'Oxygen', 'Helvetica Neue';
     z-index: 101;
-    position: absolute;
-    top: 40%;
+
   }
   #main-btn {
-    margin: 25px;
     width: 250px;
     padding: 10px 10px 10px 10px;
     color: white;
     font-size: 1.1rem;
-    font-family: 'Oxygen','Helvetica Neue';
+    font-family: 'Oxygen', 'Helvetica Neue';
     box-shadow: rgb(107, 107, 107) 1px 1px 3px 1px;
     z-index: 102;
-    position: absolute;
-    top: 50%;
+    transition: all .2s ease-in-out;
     border-radius: 5px;
     border: none;
+    text-decoration: none;
     background-color:rgb(46, 91, 0);
+  }
+
+  #main-btn:hover {
+    background-color:rgb(211, 155, 25);
+    box-shadow: 3px 3px 10px 1px rgb(182, 182, 182);
+    border: none;
   }
 
 
@@ -71,27 +81,11 @@ html {
     justify-content: center;
     transition: all .2s ease-in-out;
     text-decoration: none;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Oxygen', 'Helvetica Neue';
     width: 100%;
   }
-  #btn:hover {
-    background-color: #222832;
-    box-shadow: 5px 10px 25px black;
-  }
-  #btn-group{
-    position: absolute;
-    right: -50px;
-    display: flex;
-    flex-direction: column;
-    justify-content:flex-start;
-    align-items: center;
-    margin:50px;
-    height: 100vh;
-    width: 25vw;
-    z-index: 500;
-    background-color: black;
-  }
 
+  
   .mainImage {
       width: 50vw;
   }
@@ -102,6 +96,7 @@ html {
       justify-content: center;
       align-items: center;  
       padding-bottom: 100px;
+      padding-top: 100px;
       }
 
   #overview-card {
@@ -121,16 +116,16 @@ html {
 
   #path-card {
     padding: 20px 0 20px 0;
-    margin-top: 25px;
+    margin-bottom: 50px;
     width: 80vw;
     max-width: 600px;
-    border: solid black;
     border-radius: 15px;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
+    box-shadow: 1px 1px 18px 5px rgb(217, 217, 217);
 
   }
 #about-section {
@@ -148,25 +143,33 @@ html {
 
 }
 
-  .about-pic {
-    margin: 40px;
+#about-section {
+  padding: 150px;
+}
 
-  }
-  #about-me-pic {
-    height:300px;
-    width: auto;
-  }
-
-  .about-sec {
+  .about-ce {
     display: flex;
     flex-direction:column ;
     align-items: center;
     justify-content: center;
     max-width: 600px;
     min-width: 400px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 300px;
+    margin-bottom: 75px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 18px 5px rgb(217, 217, 217);
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    max-width: 600px;
+    min-width: 400px;
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 18px 5px rgb(217, 217, 217);
   }
 
 
@@ -210,6 +213,7 @@ html {
   align-items: center;
   height: 100vh;
   background-color: white;
+  border: solid green;
 }
 
 #tool-bkg {
@@ -222,6 +226,7 @@ html {
   min-width: 400px;
   height: 50%;
   border-radius: 10px;
+  border: solid red;
 }
 
 #input-item {
@@ -229,11 +234,8 @@ html {
   margin: 10px;
 }
 
-#resources-nav {
-  background-color: #222832;
-}
-
 footer {
   background-color: #e7e7e7;
   color:rgb(227, 170, 37);
+  font-family: 'Oxygen', 'Helvetica Neue';
 }

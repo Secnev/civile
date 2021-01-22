@@ -44,6 +44,7 @@ class Interpolation extends Component {
       return (
           <div className="form-container">
               <h2>Interpolation</h2>
+              <p>To interpolate enter the x and y values for each known point. Use X3 to find the unknown value</p>
             <form autocomplete="off" onSubmit={this.handleSubmit}>
                 <div id ="point-one">
                     <label>
